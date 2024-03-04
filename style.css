@@ -10,6 +10,10 @@
     gap: 10px;
     height: 75px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
 
 
 }
@@ -20,6 +24,7 @@ body {
 
 .navbar__sec1 {
     color: #4240D4;
+    padding: 10px;
 }
 
 .navbar__sec2 {
@@ -35,6 +40,7 @@ body {
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color: transparent ;
 }
 
 .navbar__sec2 input:focus {
@@ -122,3 +128,36 @@ flex-basis: 30%;
     margin: 20px;
     justify-content: center;
 }
+.image__desc{
+    height: 100px;
+    width: 350px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    border: solid black 3px;
+    top: 250px;
+    left: 100px;
+    padding: 10px;
+}
+
+.my-learning__desc{
+    border: solid black 1px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    margin-top: 10px;
+    right: 0;
+}
+.my-learning{
+    position: relative;
+    cursor: pointer;
+}
+.my-learning:hover .my-learning__desc{
+    display: block;
+
+}
+
